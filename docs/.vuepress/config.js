@@ -127,6 +127,7 @@ module.exports = {
             'cli-installplugins',
             'cli-cicsplugin',
             'cli-db2plugin',
+            'cli-imsplugin',
             'cli-vscodeplugin'
           ]
         }
