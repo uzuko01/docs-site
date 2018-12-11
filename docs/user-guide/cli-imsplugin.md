@@ -1,0 +1,1 @@
+This is a placeholder for Zowe CLI Plug-in for IBM IMS content 
