@@ -110,7 +110,7 @@ The Zowe CLI Plug-in for IBM IMS adds the following commands to Zowe CLI:
 
 ### Creating IMS resources
 
-The define command lets you define programs and transactions to CICS so that you can deploy and test the changes to your CICS application. To display a list of possible objects and options, issue the following command:
+The define command lets you define programs and transactions to IMS so that you can deploy and test the changes to your CICS application. To display a list of possible objects and options, issue the following command:
 
 ```
 zowe ims create -h
@@ -118,7 +118,7 @@ zowe ims create -h
 
 **Example:**
 
-Define a program named `myProgram` to the region named `myRegion` in the CICS system definition (CSD) group `myGroup:`
+Define a program named `myProgram` to the region named `myRegion` in the IMS system definition (CSD) group `myGroup:`
 
 ```
 zowe ims define program myProgram myGroup --region-name myRegion
@@ -126,7 +126,7 @@ zowe ims define program myProgram myGroup --region-name myRegion
 
 ### Deleting IMS resources
 
-The delete command lets you delete previously defined CICS programs or transactions to help you deploy and test the changes to your CICS application. To display a list of possible objects and options, issue the following command:
+The delete command lets you delete previously defined IMS programs or transactions to help you deploy and test the changes to your IMS application. To display a list of possible objects and options, issue the following command:
 
 ```
 zowe ims delete -h
@@ -134,7 +134,7 @@ zowe ims delete -h
 
 **Example:**
 
-Delete a program named PGM123 from the CICS region named MYREGION:
+Delete a program named PGM123 from the IMS region named MYREGION:
 
 ```
 zowe ims delete program PGM123 --region-name MYREGION
@@ -142,7 +142,7 @@ zowe ims delete program PGM123 --region-name MYREGION
 
 ### Refreshing IMS resources
 
-The discard command lets you remove existing CICS program or transaction definitions to help you deploy and test the changes to your CICS application. To display a list of possible objects and options, issue the following command:
+The discard command lets you remove existing IMS program or transaction definitions to help you deploy and test the changes to your IMS application. To display a list of possible objects and options, issue the following command:
 
 ```
 zowe ims discard -h
@@ -150,7 +150,7 @@ zowe ims discard -h
 
 **Example:**
 
-Discard a program named PGM123 from the CICS region named MYREGION:
+Discard a program named PGM123 from the IMS region named MYREGION:
 
 ```
 zowe ims discard program PGM123 --region-name MYREGION
