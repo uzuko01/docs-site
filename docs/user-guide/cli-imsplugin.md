@@ -1,5 +1,5 @@
 # Zowe CLI Plug-in for IBM IMS
-
+The Zowe CLI Plug-in for IBM® Information Management System (IMS)™ lets you extend Zowe CLI to interact with IMS resources (programs and transactions). You can use the plug-in to create new IMS applications or update existing IMS applications. For more information about IMS, see [IBM Information Management System (IMS)](https://www.ibm.com/it-infrastructure/z/ims).
 
   - [Use Cases](#use-cases)
   - [Prerequisites](#prerequisites)
@@ -9,13 +9,18 @@
 
 ## Use cases
 
+As an application developer or DevOps administrator, you can use Zowe CLI Plug-in for IBM IMS to perform the following tasks:
+
+- Refresh IMS transactions, programs, and dependent IMS regions. 
+- Deploy application code into IMS production or test systems.
+- Write scripts to automate IMS actions that you traditionally perform using ISPF editors, TSO, and SPOC. 
 
 ## Prerequisites
 
 Before you install the plug-in, meet the following prerequisites:
 
-  - [Install Zowe CLI](cli-installcli.md) on your computer. 
-  -
+  - [Install Zowe CLI](cli-installcli.md) on your computer.
+  - Ensure that IBM [IMS v14.1.0](https://www.ibm.com/support/knowledgecenter/en/SSEPH2_14.1.0/com.ibm.ims14.doc/ims_product_landing_v14.html) or later is installed and running in your mainframe environment.
 
 ## Installing
 
@@ -53,7 +58,7 @@ To install Zowe CLI from an online registry, complete the following steps:
 
 ### Installing from local package
 
-If you downloaded the Zowe PAX file and extracted the `zowe-cli-bundle.zip` package, complete the following steps to install the Zowe CLI Plug-in for IMS:
+If you downloaded the Zowe CLI `zowe-cli-bundle.zip` package, complete the following steps to install the Zowe CLI Plug-in for IMS:
 
 1. Open a command line window and change the local directory where you extracted the `zowe-cli-bundle.zip` file. If you do not have the `zowe-cli-bundle.zip` file, see the topic [Install Zowe CLI from local package](cli-installcli.html#installing-zowe-cli-from-local-package) for information about how to obtain and extract it.
 
