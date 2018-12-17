@@ -110,7 +110,7 @@ The Zowe CLI Plug-in for IBM IMS adds the following commands to Zowe CLI:
 
 ### Creating IMS resources
 
-The define command lets you define programs and transactions to IMS so that you can deploy and test the changes to your CICS application. To display a list of possible objects and options, issue the following command:
+The define command lets you define programs and transactions to IMS so that you can deploy and test the changes to your IMS application. To display a list of possible objects and options, issue the following command:
 
 ```
 zowe ims create -h

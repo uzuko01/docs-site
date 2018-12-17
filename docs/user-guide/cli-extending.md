@@ -27,7 +27,7 @@ For more information, see [Zowe CLI plug-in for IBM Db2 Database](cli-db2plugin.
 **Zowe CLI plug-in for IBM® Information Management System (IMS)™**
 The Zowe CLI Plug-in for IBM IMS lets you extend Zowe CLI to interact with IMS resources (programs and transactions). You can use the plug-in to create new IMS applications or update existing IMS applications.
 
-For more information, see [CA Brightside Plug-in for IBM IMS](cli-cicsplugin.md).
+For more information, see [CA Brightside Plug-in for IBM IMS](cli-imsplugin.md).
 
 **VSCode Extension for Zowe** 
 

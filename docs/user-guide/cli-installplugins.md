@@ -13,6 +13,8 @@ You can install the following plug-ins:
   - **Zowe CLI Plug-in for IBM Db2 Database**  
     Use `@brightside/db2` in your command syntax to install, update, and
     validate the IBM Db2 Database plug-in. 
+   - **Zowe CLI Plug-in for IBM IMS**
+    Use `@brightside/ims` in your command syntax to install, update, and validate the plug-in. 
 
 ## Setting the registry
 
