@@ -126,7 +126,7 @@ Where:
     
     Specifies the password for logging on to the system specified in hostname.
 
-**Example: Set up an IMS profile**
+**Example: Setting up an IMS profile**
 
 The following example creates an ims profile named 'ims123' to connect to IMS APIs at host zos123 and port 1490. The name of the IMS plex in this example is 'PLEX1' and the IMS region we want to communicate with has a host of zos124 and a port of 1491:
 
