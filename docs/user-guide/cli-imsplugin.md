@@ -81,22 +81,71 @@ If you downloaded the Zowe CLI `zowe-cli-bundle.zip` package, complete the follo
       
 ## Setting up profiles
 
-An `ims` profile is required to issue commands in the IMS group that interact with IMS regions. The `ims` profile contains your host, port, username, and password for the IBM CMCI server of your choice. You can create multiple profiles and switch between them as needed.
-
-Issue the following command to create an `ims` profile: 
+We strongly recommend that you set up an `ims` profile to retain your credentials, host, and port name for each subsequent action. You can create multiple profiles and switch between them as needed. Issue the following command to create an `ims` profile: 
 
 ```
-zowe profiles create ims <profile name> -H <host> -P <port> -u <user> -p <password>
+zowe profiles create ims-profile <profileName> --host <hostname> --port <portnumber> --ims-connect-host <hostname> --ims-connect-port <portnumber> --user <username> --password <password>
 ```
 
-**Note:** For more information about the syntax, actions, and options for a `profiles create` command, open Zowe CLI and issue the following command:
+Where:
+
+- **profileName**
+
+    Specifies the name of the new ims profile. You can load this profile by using the name on commands that support the --ims-profile option.
+
+- **--host | --host**
+
+    Specifies the IMS Command Services server host name.
+
+- **--port  | -p**
+
+    Specifies the IMS Command Services server port. 
+
+- **--ims-connect-host**
+
+    Specifies the hostname of your instance of IMS Connect. This is typically the hostname of the mainframe LPAR where IMS Connect is running.
+
+- **--ims-connect-port**
+
+    Specifies the port of your instance of IMS Connect. This port can be found in your IMS Connect configuration file on the mainframe.
+
+- **--plex**
+
+    Specifies the name of the IMSplex.
+
+- **--user  | --user**
+
+    Specifies the username for logging on to the system specified in hostname.
+
+- **--pass | --pass**
+    
+    Specifies the password for logging on to the system specified in hostname.
+
+**Example: Set up an IMS profile**
+
+The following example creates an ims profile named 'ims123' to connect to IMS APIs at host zos123 and port 1490. The name of the IMS plex in this example is 'PLEX1' and the IMS region we want to communicate with has a host of zos124 and a port of 1491:
 
 ```
-zowe profiles create ims -h
+zowe profiles create ims-profile ims123 --host zos123 --port 1490 --user ibmuser --pass myp4ss --plex PLEX1 --ich zos124 --icp 1491 
 ```
 
-The result of the command displays as a success or failure message. You can use your profile when you issue commands in the `ims` command group.
+Entering the following command stores your profile information in a YAML file, and returns the following message:
 
+```
+Profile created successfully! Path:
+C:\Users\johndoe\.zowe\profiles\ims\ims123.yaml
+
+
+type:     ims
+name:     ims123
+host:     zos123
+port:     1490
+ims-connect-host: zos124
+ims-connect-port: 1491
+plex:     PLEX1
+username: securely_stored
+password: securely_stored
+```
 ## Commands
 
 The Zowe CLI Plug-in for IBM IMS adds the following commands to Zowe CLI:
