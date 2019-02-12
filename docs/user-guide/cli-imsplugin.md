@@ -164,48 +164,48 @@ The plug-in adds the following commands to Zowe CLI:
 
 ### Starting IMS resources
 
-The define command lets you define programs and transactions to IMS so that you can deploy and test the changes to your IMS application. To display a list of possible objects and options, issue the following command:
+The start command lets you start an IMS region, transaction, or application program and make IMS resources available for reference and use. The command submits a Start TRAN or Start PRG command in IMS and returns the output. To display a list of possible objects and options, issue the following command:
 
 ```
-zowe ims create -h
+zowe ims start -h
 ```
 
 **Example:**
 
-Define a program named `myProgram` to the region named `myRegion` in the IMS system definition (CSD) group `myGroup:`
+Start a transaction named `TRN1`:
 
 ```
-zowe ims define program myProgram myGroup --region-name myRegion
+zowe ims start transaction TRN1 
 ```
 
 ### Stopping IMS resources
 
-The delete command lets you delete previously defined IMS programs or transactions to help you deploy and test the changes to your IMS application. To display a list of possible objects and options, issue the following command:
+The stop command lets you stop a running IMS region, transaction, or application program. The command submits a Stop Region command in IMS and returns the output. To display a list of objects and options, issue the following command:
 
 ```
-zowe ims delete -h
+zowe ims stop -h
 ```
 
 **Example:**
 
-Delete a program named PGM123 from the IMS region named MYREGION:
+Stop an application program named `PGM123`:
 
 ```
-zowe ims delete program PGM123 --region-name MYREGION
+zowe ims stop program PGM123
 ```
 
 ### Querying IMS resources
 
-The discard command lets you remove existing IMS program or transaction definitions to help you deploy and test the changes to your IMS application. To display a list of possible objects and options, issue the following command:
+The query command returns a list of programs and transactions in an IMSplex. The query returns information such as class, status, queue count, and more. This command submits a Query PGM or Query TRANS command in IMS and returns the output. To display a list of objects and options, issue the following command:
 
 ```
-zowe ims discard -h
+zowe ims query -h
 ```
 
 **Example:**
 
-Discard a program named PGM123 from the IMS region named MYREGION:
+Query transaction information for transactions named `TRAN1` and `TRAN2`:
 
 ```
-zowe ims discard program PGM123 --region-name MYREGION
+zowe ims query transaction TRAN1 TRAN2
 ```
