@@ -151,16 +151,17 @@ plex:     PLEX1
 username: securely_stored
 password: securely_stored
 ```
+
 ## Commands
 
-The Zowe CLI Plug-in for IBM IMS adds the following commands to Zowe CLI:
+The plug-in adds the following commands to Zowe CLI:
 
-  - [Creating IMS resources](#creating-ims-resources)
-  - [Deleting IMS resources](#deleting-ims-resources)
-  - [Refreshing IMS resources](#refreshing-ims-resources)
-  - [Querying IMS resources](#querying-ims-resources)
   - [Starting IMS resources](#starting-ims-resources)
   - [Stopping IMS resources](#stopping-ims-resources)
+  - [Querying IMS resources](#querying-ims-resources)
+
+**Note:** The examples in this section assume that you define your IMS connection details using profiles, options on the command line, or environment variables. For more information, see [Setting up IMS user profiles](#setting-up-profiles) and [Define CLI connection settings](cli-usingcli.md).
+
 
 ### Creating IMS resources
 
